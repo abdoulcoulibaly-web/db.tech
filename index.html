@@ -25,6 +25,7 @@
             <a href="#mysql" class="hover:text-blue-500 transition">MySQL</a>
             <a href="#sqlite" class="hover:text-cyan-400 transition">SQLite</a>
             <a href="#mongodb" class="hover:text-green-500 transition">MongoDB</a>
+            <a href="#comparaison" class="hover:text-purple-400 transition">Comparaison</a>
         </div>
         <!-- Mobile Menu Icon (Simple) -->
         <div class="md:hidden">
@@ -54,106 +55,482 @@
 
     <!-- SECTION 2 : MYSQL -->
     <section id="mysql" class="section-min-height flex flex-col justify-center px-6 md:px-24 py-20 bg-slate-900">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <div class="flex items-center gap-3 text-blue-500 mb-4 font-bold tracking-widest uppercase">
-                    <i data-lucide="server"></i> Structure Relationnelle
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">MySQL</h2>
-                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                    Le moteur des sites web dynamiques. MySQL est le choix numéro 1 pour la gestion des données structurées et la sécurité des transactions.
-                </p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="glass p-4 rounded-xl">
-                        <h4 class="font-bold text-blue-400 mb-2">Utilisation</h4>
-                        <ul class="text-sm text-slate-300 space-y-1">
-                            <li>• Gestion des utilisateurs</li>
-                            <li>• Plateformes E-commerce</li>
-                            <li>• Systèmes bancaires</li>
-                        </ul>
-                    </div>
-                    <div class="glass p-4 rounded-xl">
-                        <h4 class="font-bold text-blue-400 mb-2">Technique</h4>
-                        <ul class="text-sm text-slate-300 space-y-1">
-                            <li>• Tables & Colonnes</li>
-                            <li>• Requêtes SQL</li>
-                            <li>• Relations fortes</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute inset-0 bg-blue-500/20 blur-[100px] rounded-full"></div>
-                <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800" alt="Serveur" class="rounded-2xl shadow-2xl relative z-10 border border-white/10">
-            </div>
-        </div>
-    </section>
 
-    <!-- SECTION 3 : SQLITE -->
-    <section id="sqlite" class="section-min-height flex flex-col justify-center px-6 md:px-24 py-20 bg-slate-800/50">
-        <div class="grid md:grid-cols-2 gap-12 items-center flex-row-reverse">
-            <div class="order-2 md:order-1 relative">
-                <div class="absolute inset-0 bg-cyan-500/10 blur-[100px] rounded-full"></div>
-                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800" alt="Mobile" class="rounded-2xl shadow-2xl relative z-10 border border-white/10">
-            </div>
-            <div class="order-1 md:order-2">
-                <div class="flex items-center gap-3 text-cyan-400 mb-4 font-bold tracking-widest uppercase">
-                    <i data-lucide="smartphone"></i> Embarqué & Léger
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">SQLite</h2>
-                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                    Pas de serveur, juste un fichier. SQLite est littéralement partout : dans votre poche, votre navigateur et vos logiciels préférés.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-4 glass p-4 rounded-xl">
-                        <div class="bg-cyan-500/20 p-2 rounded-lg text-cyan-400"><i data-lucide="layers"></i></div>
-                        <div>
-                            <h4 class="font-bold">Applications Locales</h4>
-                            <p class="text-sm text-slate-400">Idéal pour Android, iOS et les logiciels de bureau.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4 glass p-4 rounded-xl">
-                        <div class="bg-cyan-500/20 p-2 rounded-lg text-cyan-400"><i data-lucide="zap"></i></div>
-                        <div>
-                            <h4 class="font-bold">Zéro Configuration</h4>
-                            <p class="text-sm text-slate-400">Un seul fichier stocke toute la base, ultra rapide pour les lectures.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="grid md:grid-cols-2 gap-12 items-center">
 
-    <!-- SECTION 4 : MONGODB -->
-    <section id="mongodb" class="section-min-height flex flex-col justify-center px-6 md:px-24 py-20 bg-slate-900">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <div class="flex justify-center items-center gap-3 text-green-500 mb-4 font-bold tracking-widest uppercase">
-                <i data-lucide="file-json"></i> NoSQL & Flexible
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">MongoDB</h2>
-            <p class="text-slate-400 text-lg">
-                Le choix des applications modernes et du Big Data. Ici, on ne parle plus de tables, mais de documents flexibles.
-            </p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass p-8 rounded-2xl hover:bg-green-500/5 transition group">
-                <div class="text-green-500 mb-6 group-hover:scale-110 transition duration-300"><i data-lucide="share-2" class="w-10 h-10"></i></div>
-                <h3 class="text-xl font-bold mb-4">Réseaux Sociaux</h3>
-                <p class="text-slate-400 text-sm">Gestion fluide des flux d'actualités, des commentaires et des notifications en temps réel.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl hover:bg-green-500/5 transition group">
-                <div class="text-green-500 mb-6 group-hover:scale-110 transition duration-300"><i data-lucide="code-2" class="w-10 h-10"></i></div>
-                <h3 class="text-xl font-bold mb-4">Données JSON</h3>
-                <p class="text-slate-400 text-sm">Stockage natif au format document. Parfait pour les API et le développement JavaScript.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl hover:bg-green-500/5 transition group">
-                <div class="text-green-500 mb-6 group-hover:scale-110 transition duration-300"><i data-lucide="expand" class="w-10 h-10"></i></div>
-                <h3 class="text-xl font-bold mb-4">Scalabilité</h3>
-                <p class="text-slate-400 text-sm">Capable de gérer des volumes massifs de données sur plusieurs serveurs facilement.</p>
-            </div>
-        </div>
-    </section>
+<div>
+
+<div class="flex items-center gap-3 text-blue-500 mb-4 font-bold tracking-widest uppercase">
+<i data-lucide="server"></i> Structure Relationnelle
+</div>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-6">MySQL</h2>
+
+<p class="text-slate-400 text-lg mb-6 leading-relaxed">
+
+MySQL est utilisé dans la majorité des sites web pour stocker des données
+structurées comme les utilisateurs, les commandes ou les produits.
+Les données sont organisées dans des tables reliées entre elles.
+
+</p>
+
+<div class="space-y-4 text-slate-300">
+
+<p><b>Fonctionnement :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Les données sont stockées dans des tables composées de lignes et colonnes.</li>
+
+<li>Chaque table possède une clé primaire qui identifie chaque ligne.</li>
+
+<li>Les tables peuvent être liées entre elles avec des relations.</li>
+
+<li>Les données sont manipulées avec le langage SQL.</li>
+
+</ul>
+
+<p><b>Commandes SQL importantes :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>SELECT → lire les données</li>
+
+<li>INSERT → ajouter des données</li>
+
+<li>UPDATE → modifier les données</li>
+
+<li>DELETE → supprimer des données</li>
+
+</ul>
+
+<p><b>Exemples réels :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Système de connexion utilisateur</li>
+
+<li>Sites e-commerce</li>
+
+<li>Gestion scolaire</li>
+
+<li>Applications bancaires</li>
+
+</ul>
+
+<p><b>Avantages :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Données bien organisées</li>
+
+<li>Sécurité des transactions</li>
+
+<li>Très utilisé dans le web</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="relative">
+
+<div class="absolute inset-0 bg-blue-500/20 blur-[100px] rounded-full"></div>
+
+<img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800"
+class="rounded-2xl shadow-2xl relative z-10 border border-white/10">
+
+</div>
+
+</div>
+
+</section>
+
+    <!-- SECTION 3 : SQLITE --><section id="sqlite" class="section-min-height flex flex-col justify-center px-6 md:px-24 py-20 bg-slate-800/50">
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+
+<div>
+
+<h2 class="text-4xl md:text-5xl font-bold mb-6">SQLite</h2>
+
+<p class="text-slate-400 text-lg mb-6">
+
+SQLite est une base de données embarquée utilisée dans les applications
+mobiles et les logiciels locaux. Elle fonctionne sans serveur et stocke
+toutes les données dans un seul fichier.
+
+</p>
+
+<div class="text-slate-300 space-y-4">
+
+<p><b>Fonctionnement :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>La base de données est contenue dans un seul fichier.</li>
+
+<li>Pas besoin d'installer un serveur.</li>
+
+<li>La base est directement intégrée dans le programme.</li>
+
+<li>Utilise le langage SQL comme MySQL.</li>
+
+</ul>
+
+<p><b>Où on trouve SQLite :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Téléphones Android</li>
+
+<li>Applications iPhone</li>
+
+<li>Navigateur web</li>
+
+<li>Logiciels de bureau</li>
+
+</ul>
+
+<p><b>Avantages :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Très rapide</li>
+
+<li>Facile à utiliser</li>
+
+<li>Aucune installation</li>
+
+<li>Léger</li>
+
+</ul>
+
+<p><b>Limites :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Pas adapté aux gros sites web</li>
+
+<li>Peu d'utilisateurs simultanés</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="relative">
+
+<div class="absolute inset-0 bg-cyan-500/10 blur-[100px] rounded-full"></div>
+
+<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
+class="rounded-2xl shadow-2xl relative z-10 border border-white/10">
+
+</div>
+
+</div>
+
+</section>
+
+    <!-- SECTION 4 : MONGODB --><section id="mongodb" class="section-min-height flex flex-col justify-center px-6 md:px-24 py-20 bg-slate-900">
+
+<div class="max-w-4xl mx-auto">
+
+<h2 class="text-4xl md:text-5xl font-bold mb-8 text-center">
+MongoDB
+</h2>
+
+<p class="text-slate-400 text-lg text-center mb-10">
+
+MongoDB est une base NoSQL qui stocke les données sous forme de documents.
+Chaque document ressemble à un objet JSON utilisé en JavaScript.
+
+</p>
+
+
+<div class="text-slate-300 space-y-6">
+
+<p><b>Fonctionnement :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Les données sont stockées en documents JSON.</li>
+
+<li>Pas de tables comme MySQL.</li>
+
+<li>Les documents peuvent avoir des structures différentes.</li>
+
+<li>Facile à utiliser avec JavaScript.</li>
+
+</ul>
+
+
+<p><b>Utilisations réelles :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Applications web modernes</li>
+
+<li>API REST</li>
+
+<li>Réseaux sociaux</li>
+
+<li>Applications temps réel</li>
+
+</ul>
+
+
+<p><b>Avantages :</b></p>
+
+<ul class="list-disc ml-6 space-y-2">
+
+<li>Flexible</li>
+
+<li>Très rapide pour les grosses données</li>
+
+<li>Facile à faire évoluer</li>
+
+</ul>
+
+
+<p><b>Exemple document MongoDB :</b></p>
+
+<div class="bg-black p-4 rounded-lg text-green-400 text-sm">
+
+{
+<br>
+&nbsp;&nbsp;"nom":"Ali",
+<br>
+&nbsp;&nbsp;"age":25,
+<br>
+&nbsp;&nbsp;"ville":"Abidjan"
+<br>
+}
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--section comparaison-->
+<section id="comparaison" class="section-min-height flex flex-col justify-center px-6 md:px-24 py-20 bg-slate-800">
+
+<h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+Comparaison des Bases de Données
+</h2>
+
+
+<div class="overflow-x-auto">
+
+<table class="w-full text-left border border-white/10">
+
+<thead class="bg-slate-900 text-white">
+
+<tr>
+
+<th class="p-4">Caractéristiques</th>
+<th class="p-4 text-blue-400">MySQL</th>
+<th class="p-4 text-cyan-400">SQLite</th>
+<th class="p-4 text-green-400">MongoDB</th>
+
+</tr>
+
+</thead>
+
+
+<tbody class="text-slate-300">
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Type</td>
+
+<td class="p-4">Relationnelle (SQL)</td>
+
+<td class="p-4">Relationnelle embarquée</td>
+
+<td class="p-4">NoSQL (Documents)</td>
+
+</tr>
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Stockage</td>
+
+<td class="p-4">Tables</td>
+
+<td class="p-4">Fichier unique</td>
+
+<td class="p-4">Documents JSON</td>
+
+</tr>
+
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Serveur</td>
+
+<td class="p-4">Oui</td>
+
+<td class="p-4">Non</td>
+
+<td class="p-4">Oui</td>
+
+</tr>
+
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Langage</td>
+
+<td class="p-4">SQL</td>
+
+<td class="p-4">SQL</td>
+
+<td class="p-4">Requêtes JSON</td>
+
+</tr>
+
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Performance</td>
+
+<td class="p-4">Très bonne pour sites web</td>
+
+<td class="p-4">Très rapide localement</td>
+
+<td class="p-4">Très bonne pour gros volumes</td>
+
+</tr>
+
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Utilisation</td>
+
+<td class="p-4">
+
+Sites web<br>
+E-commerce<br>
+Applications métier
+
+</td>
+
+<td class="p-4">
+
+Applications mobiles<br>
+Logiciels locaux
+
+</td>
+
+<td class="p-4">
+
+API<br>
+Applications modernes<br>
+Big Data
+
+</td>
+
+</tr>
+
+
+
+<tr class="border-t border-white/10">
+
+<td class="p-4 font-bold">Difficulté</td>
+
+<td class="p-4">Moyenne</td>
+
+<td class="p-4">Facile</td>
+
+<td class="p-4">Moyenne</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="mt-16 max-w-4xl mx-auto text-slate-400 space-y-6">
+
+
+<h3 class="text-2xl font-bold text-white">
+Quand choisir chaque base ?
+</h3>
+
+
+<p>
+
+<b>Choisir MySQL :</b>
+
+</p>
+
+<ul class="list-disc ml-6">
+
+<li>Site web avec beaucoup d'utilisateurs</li>
+
+<li>Données bien organisées</li>
+
+<li>Système de connexion</li>
+
+</ul>
+
+
+
+<p>
+
+<b>Choisir SQLite :</b>
+
+</p>
+
+<ul class="list-disc ml-6">
+
+<li>Application mobile</li>
+
+<li>Petit projet</li>
+
+<li>Stockage local</li>
+
+</ul>
+
+
+
+<p>
+
+<b>Choisir MongoDB :</b>
+
+</p>
+
+<ul class="list-disc ml-6">
+
+<li>Applications modernes</li>
+
+<li>Données flexibles</li>
+
+<li>Projet JavaScript</li>
+
+</ul>
+
+
+</div>
+
+</section>
 
     <!-- FOOTER -->
     <footer class="py-12 border-t border-white/10 text-center text-slate-500 text-sm">
